@@ -27,40 +27,8 @@ body {
     transform: translateY(-5px);
 }
 
-.Doar-rapido {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.Grupo-input {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.Form-label {
-    color: #555;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.Form-input {
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: border-color 0.3s;
-}
-
-.Form-input:focus {
-    border-color: #4a90e2;
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
-}
-
 .Botao-proximo {
-    background-color: #4a90e2;
+    background-color: rgba(18, 66, 52, 1);
     color: white;
     border: none;
     padding: 12px;
@@ -76,6 +44,3 @@ body {
     background-color: #3a7bc8;
 }
 
-footer {
-    text-align: end;
-}

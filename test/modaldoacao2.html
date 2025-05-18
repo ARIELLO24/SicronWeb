@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="IconeSite" href="/assets/Logo.svg">
+    <link rel="stylesheet" href="/style/modaldoacao2.css">
+</head>
+
+<body>
+
+    <main>
+        <!-- Modal de doação rapida -->
+        <div id="modalDoacao" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar" onclick="fecharModal()">&times;</span>
+                <!-- Formulario de doação -->
+                <div class="Container-doar">
+                    <div class="Doar-card">
+                        <div style="align-items: center; gap: 10px; color: rgba(18, 66, 52, 1); font-size: 24px;">
+                            <img src="/assets/Logo.svg" alt="internet" style="max-height: 30px; width: auto;">
+                            SICRON
+                            <h1 style="font-size: 16px;">Destinatario</h1>
+                            <p style="font-size: 12px;">Escolha a causa e depois defina o valor que você gostaria de
+                                contribuir.</p>
+                        </div>
+
+                        <!-- Campo de nome-->
+                        <div class="Grupo-lado-a-lado">
+                            <!-- Campo de Causa (ONGs) -->
+                            <div class="Grupo-input">
+                                <label for="causa" class="form-label">Causa</label>
+                                <select id="causa" name="causa" class="Form-input" required>
+                                    <option value="">Selecione uma ONG</option>
+                                    <option value="4patas">4 Patas</option>
+                                    <option value="judeusparty">Judeus Party</option>
+                                    <option value="blackmonkeys">Black Monkeys</option>
+                                </select>
+                            </div>
+
+                            <!-- Campo de Valor -->
+                            <div class="Grupo-input">
+                                <label for="valor" class="form-label">Valor</label>
+                                <input type="number" id="valor" name="valor" class="Form-input"
+                                    placeholder="Digite o valor da doação" min="1" step="0.01" required>
+                            </div>
+                        </div>
+
+                        <div style="padding: 10px;"></div>
+
+                        <a href="modaldoacao3.html"><button type="submit" class="Botao-proximo">PROSSEGUIR PARA O
+                                PAGAMENTO</button></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
