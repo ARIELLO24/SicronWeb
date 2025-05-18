@@ -1,0 +1,81 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #010530;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.Container-doar {
+    width: 100%;
+    max-width: 400px;
+}
+
+.Doar-card {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.Doar-card:hover {
+    transform: translateY(-5px);
+}
+
+.Doar-rapido {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Grupo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.Form-label {
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.Form-input {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.Form-input:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+.Botao-proximo {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.Botao-proximo :hover {
+    background-color: #3a7bc8;
+}
+
+footer {
+    text-align: end;
+}
