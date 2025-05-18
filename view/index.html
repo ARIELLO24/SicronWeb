@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="IconeSite" href="/assets/Logo.svg">
+    <link rel="stylesheet" href="/style/styles.css">
+</head>
+
+<body>
+
+    <header class="Site-header">
+        <div class="Header-container">
+            <div class="Logo">
+                <a href="/views/index.html">
+                    <img src="/assets/Logo.svg" alt="IconeONG" width="400" height="400">
+                </a>
+                <span class="Nome-site">Sicron</span>
+            </div>
+            <nav class="Main-nav" aria-label="Main navigation">
+                <a href="#" class="Nav-link">Inicio</a>
+                <a href="#" class="Nav-link">ONGs</a>
+                <a href="#" class="Nav-link">Como funciona</a>
+                <a href="#" class="Nav-link">Sobre nós</a>
+                <button id="darkModeToggle">🌓 Modo Escuro</button>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <section class="Secao-doadores">
+        <div class="Container">
+            <div class="Apresentação_conteudo">
+                <div class="Texto-conteudo">
+                    <h1>Conectando doadores a quem realmente precisa</h1>
+                    <p>Faça a diferença na vida de pessoas de forma segura e transparente</p>
+                    <a href="#" class="Botao">Explorar ONGs</a>
+                </div>
+                <div class="Imagem-conteudo">
+                    <img src="/assets/pessoas.jpeg" alt="Conectando doadores">
+                </div>
+            </div>
+
+
+            <div class="Info">
+                <div class="cardC">
+                    <h3>281</h3>
+                    <p>ONGs cadastradas</p>
+                </div>
+
+                <div class="cardCV">
+                    <h3>R$ 1.567,92</h3>
+                    <p>Valor total arrecadado</p>
+                </div>
+
+                <div class="cardCO">
+                    <h3>17</h3>
+                    <p>ONGs beneficiadas</p>
+                </div>
+
+                <div class="cardC">
+                    <h3>8</h3>
+                    <p>Fornecedores parceiros</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="Conteudo-principal">
+        <div class="Titulo">
+            <h1>Nossas ONGs</h1>
+            <p>Conheça as organizações que estão tranformando vidas<br>através de projetos impactantes</p>
+        </div>
+
+
+        <div class="Search-filter">
+            <input type="text" placeholder="Digite aqui para buscar...">
+            <select>
+                <option>Todos os tipos</option>
+                <option>Animais</option>
+                <option>Crianças</option>
+                <option>Saúde</option>
+                <option>Gays</option>
+            </select>
+            <select>
+                <option>Todos os estados</option>
+                <option>RS</option>
+                <option>RJ</option>
+                <option>MG</option>
+                <option>SC</option>
+                <option>BH</option>
+            </select>
+        </div>
+
+
+        <div class="Cards-container">
+            <div class="card">
+                <div class="card-header">
+                    <div class="imagem-conteudo">
+                        <img src="/assets/cachorros.png" alt="Pessoas fazendo doações">
+                    </div>
+                    <div class="card-titulo">4 Patas</div>
+                    <div class="card-status"><span>São leopoldo</span>
+
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-descricao">Por favor Temos fome</div>
+                    <div class="card-divider"></div>
+                    <div class="card-highlight"><strong>Dinheiro</strong></div>
+                </div>
+
+                <div class="card-footer">
+                    <a href="#"><button>Visualizar tudo</button></a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="imagem-conteudo">
+                        <img src="/assets/judeus.jpeg" alt="Pessoas fazendo doações">
+                    </div>
+                    <div class="card-titulo">Judeus Party</div>
+                    <div class="card-status">
+                        <span>Israel</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-descricao">Temos fome</div>
+                    <div class="card-divider"></div>
+                    <div class="card-highlight"><strong>Dinheiro</strong></div>
+                </div>
+                <div class="card-footer">
+                    <a href="#"><button>Visualizar tudo</button></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="imagem-conteudo">
+                        <img src="/assets/mamaco.jpeg" alt="Pessoas fazendo doações">
+                    </div>
+                    <div class="card-titulo">Black Monkeys</div>
+                    <div class="card-status">
+                        <span>Africa</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-descricao">Temos fome</div>
+                    <div class="card-divider"></div>
+                    <div class="card-highlight"><strong>Banana</strong></div>
+                </div>
+                <div class="card-footer">
+                    <a href="#"><button>Visualizar tudo</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="ONGs">Visualizar Todas</div>
+    </main>
+
+    <footer>
+        <!-- Se quiser botar -->
+    </footer>
+
+    <script src="/script/darkmode.js"></script>
+
+</body>
+
+</html>
