@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="IconeSite" href="/assets/Logo.svg">
-    <link rel="stylesheet" href="/style/styles.css">
-    <link rel="stylesheet" href="/style/modal.css">
+    <link rel="IconeSite" href="../assets/Logo.svg">
+    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/modal.css">
 </head>
-
+ 
 <!-- Modal de doação rapida -->
 <div id="modalDoacao" class="modal">
     <div class="modal-conteudo">
@@ -21,7 +21,7 @@
         <div class="Container-doar">
             <div class="Doar-card">
                 <div style="align-items: center; gap: 10px; color: rgba(18, 66, 52, 1); font-size: 24px;">
-                    <img src="/assets/Logo.svg" alt="internet" style="max-height: 30px; width: auto;">
+                    <img src="../assets/Logo.svg" alt="internet" style="max-height: 30px; width: auto;">
                     SICRON
                     <h1 style="font-size: 16px;">Seus Dados</h1>
                     <p style="font-size: 12px;">Para continuar com o pagamento, precisamos que você nos forneça algumas
@@ -45,7 +45,7 @@
                         <label for="nascimento" class="form-label">Data de Nascimento</label>
                         <input type="date" id="nascimento" name="nascimento" class="Form-input" required>
                     </div>
-
+ 
                     <button type="submit" class="Botao-proximo">Próximo</button>
                 </form>
             </div>
@@ -53,14 +53,14 @@
     </div>
 </div>
 <!-- Fim do modal-->
-
+ 
 <body>
     <!-- Cabeçalho -->
     <header class="Site-header">
         <div class="Header-container">
             <div class="Logo">
                 <a href="#">
-                    <img src="/assets/Logo.svg" alt="IconeONG" width="400" height="400">
+                    <img src="../assets/Logo.svg" alt="IconeONG" width="400" height="400">
                 </a>
                 <span class="Nome-site">Sicron</span>
             </div>
@@ -69,12 +69,12 @@
                 <a href="#" class="Nav-link">ONGs</a>
                 <button style="color:white; background-color:#095202; border-radius: 30px;"
                     onclick="abrirModal()">Doação Rápida</button>
-                <a href="/view/Sobre.html" class="Nav-link">Sobre nós</a>
+                <a href="../view/Sobre.html" class="Nav-link">Sobre nós</a>
                 <button id="darkModeToggle">🌓 Modo Escuro</button>
             </nav>
         </div>
         <!-- Fim do cabeçalho-->
-
+ 
     </header>
     <!-- Seção estatistica -->
     <section class="Secao-doadores">
@@ -86,27 +86,26 @@
                     <a href="#" class="Botao">Explorar ONGs</a>
                 </div>
                 <div class="Imagem-conteudo">
-                    <img src="/assets/pessoas.jpeg" alt="Conectando doadores">
+                    <img src="../assets/pessoas.jpeg" alt="Conectando doadores">
                 </div>
             </div>
-
-
-            <div class="Info">
+ 
+            <div id="israelCards" class="cards-container">
                 <div class="cardC">
                     <h3>281</h3>
                     <p>ONGs cadastradas</p>
                 </div>
-
+ 
                 <div class="cardCV">
                     <h3>R$ 1.567,92</h3>
                     <p>Valor total arrecadado</p>
                 </div>
-
+ 
                 <div class="cardCO">
                     <h3>17</h3>
                     <p>ONGs beneficiadas</p>
                 </div>
-
+ 
                 <div class="cardC">
                     <h3>8</h3>
                     <p>Fornecedores parceiros</p>
@@ -115,15 +114,15 @@
         </div>
     </section>
     <!-- Fim da estatistica -->
-
+ 
     <!-- Seção de doações-->
     <main class="Conteudo-principal">
         <div class="Titulo">
             <h1>Nossas ONGs</h1>
             <p>Conheça as organizações que estão tranformando vidas<br>através de projetos impactantes</p>
         </div>
-
-
+ 
+ 
         <div class="Search-filter">
             <input type="text" placeholder="Digite aqui para buscar...">
             <select>
@@ -142,68 +141,67 @@
                 <option>BH</option>
             </select>
         </div>
-
-
-        <div class="Cards-container">
+ 
+ 
+        <div class="cards-container">
             <div class="card">
                 <div class="card-header">
                     <div class="imagem-conteudo">
-                        <img src="/assets/cachorros.png" alt="Pessoas fazendo doações">
+                        <img src="../assets/cachorros.png" alt="Pessoas fazendo doações">
                     </div>
-                    <div class="card-titulo">4 Patas</div>
+                    <div class="card-titulo"> 4 Patas </div>
                     <div class="card-status"><span>São leopoldo</span>
-
+ 
                     </div>
                 </div>
                 <div class="card-content">
-                    <div class="card-descricao">Por favor Temos fome</div>
+                    <div class="card-descricao">Por favor, temos fome</div>
                     <div class="card-divider"></div>
                     <div class="card-highlight"><strong>Dinheiro</strong></div>
                 </div>
-
+ 
                 <div class="card-footer">
-                    <a href="#"><button>Visualizar tudo</button></a>
+                    <button> Visualizar tudo </button>
                 </div>
             </div>
-
-
+ 
             <div class="card">
                 <div class="card-header">
                     <div class="imagem-conteudo">
-                        <img src="/assets/judeus.jpeg" alt="Pessoas fazendo doações">
+                        <img src="../assets/judeus.jpeg" alt="Pessoas">
                     </div>
-                    <div class="card-titulo">Judeus Party</div>
+                    <div class="card-titulo"> Judeu party </div>
                     <div class="card-status">
-                        <span>Israel</span>
+                        <span> Ismael </span>
                     </div>
                 </div>
                 <div class="card-content">
-                    <div class="card-descricao">Temos fome</div>
+                    <div class="card-descricao"> Quermo faze festa </div>
                     <div class="card-divider"></div>
                     <div class="card-highlight"><strong>Dinheiro</strong></div>
                 </div>
                 <div class="card-footer">
-                    <a href="#"><button>Visualizar tudo</button></a>
+                    <button> Visualizar tudo </button>
                 </div>
             </div>
-
+ 
             <div class="card">
                 <div class="card-header">
                     <div class="imagem-conteudo">
-                        <img src="/assets/mamaco.jpeg" alt="Pessoas fazendo doações">
+                        <img src="../assets/mamaco.jpeg" alt="Pessoas fazendo doações">
                     </div>
-                    <div class="card-titulo">Black Monkeys</div>
+                    <div class="card-titulo">Mamacos Taca-Bosa</div>
                     <div class="card-status">
-                        <span>Africa</span>
+                        <span>Anérica da Morte</span>
                     </div>
                 </div>
                 <div class="card-content">
-                    <div class="card-descricao">Temos fome</div>
+                    <div class="card-descricao">Mim ajude</div>
                     <div class="card-divider"></div>
                     <div class="card-highlight"><strong>Banana</strong></div>
                 </div>
                 <div class="card-footer">
-                    <a href="#"><button>Visualizar tudo</button></a>
+                    <button> Visualizar tudo </button>
                 </div>
             </div>
         </div>
@@ -211,13 +209,13 @@
                     ONGs ></button></a></div>
         <!-- Fim de doações-->
     </main>
-
+ 
     <footer>
         <!-- Se quiser botar -->
     </footer>
-    <script src="/script/modal.js"></script>
-    <script src="/script/darkmode.js"></script>
-
+    <script src="../script/modal.js"></script>
+    <script src="../script/darkmode.js"></script>
+ 
 </body>
-
+ 
 </html>
