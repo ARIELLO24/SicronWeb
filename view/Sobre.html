@@ -25,8 +25,7 @@
             <nav class="Main-nav" aria-label="Main navigation">
                 <a href="/view/index.html" class="Nav-link">Inicio</a>
                 <a href="#" class="Nav-link">ONGs</a>
-                <input style=" background: #f8f9fa; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-                 " type="text" placeholder="Digite aqui para buscar...">
+                <input type="text" placeholder="Digite aqui para buscar...">
                 <button id="darkModeToggle">🌓 Modo Escuro</button>
             </nav>
         </div>
@@ -37,8 +36,8 @@
         <section class="Secao-doadores">
             <div class="Container">
                 <div class="Apresentação_conteudo">
-                    <div class="Texto-conteudo">
-                        <h1 style="color: rgba(18, 66, 52, 1); font-size: 96px;">SICRON</h1>
+                    <div class="Texto-conteudoDoador">
+                        <h1>SICRON</h1>
                         <p>A SICRON surgiu como um projeto acadêmico,<br>
                             com um propósito real: transformar a solidariedade.<br>
                             Durante nossa pesquisa, vimos uma grande carência.<br>
@@ -60,10 +59,9 @@
     </main>
 
     <section>
-        <div class="Titulo">
-            <h1 style="color: yellow; font-size: 86px; text-align: justify; text-decoration: underline;">Junte-se a nós!
-            </h1>
-            <p style=" font-size: 24px; text-align: justify;"> Sabemos que a confiança é o alicerce da
+        <div class="Titulo-Sobre">
+            <h1>Junte-se a nós! </h1>
+            <p>Sabemos que a confiança é o alicerce da
                 generosidade. Por isso,
                 toda doação na SICRON é<br>acompanhada de comprovantes com notas fiscais e detalhes da entrega - você vê
                 exatamente<br>como seu apoio se transforma em impacto real. E o melhor: doar é simples e seguro. Com
@@ -73,25 +71,24 @@
         </div>
     </section>
 
-    <footer style="text-align: center;">
-        <div style="display: flex; justify-content: center; gap: 50px;">
+    <footer>
+        <div class="BotoesDoacao">
             <a href="#" class="Botao">Seja um doador!</a>
             <a href="#" class="Botao">Receba Doações</a>
         </div>
 
-        <div style="display: flex; justify-content: center; align-items: center; gap: 50px; padding: 100px;">
-
-            <div style="display: flex; align-items: center; gap: 10px; color: rgba(18, 66, 52, 1); font-size: 24px;">
-                <img src="/assets/internet.png" alt="internet" style="max-height: 30px; width: auto;">
-                www.sicron.org.br
+        <div class="contato-container">
+            <div class="contato-item">
+                <img src="/assets/internet.png" alt="internet" class="contato-icone">
+                <span class="contato-texto">www.sicron.org.br</span>
             </div>
 
-            <div style="display: flex; align-items: center; gap: 10px; color: rgba(18, 66, 52, 1); font-size: 24px;">
-                <img src="/assets/email.png" alt="email" style="max-height: 30px; width: auto;">
-                team@sicron.or
+            <div class="contato-item">
+                <img src="/assets/email.png" alt="email" class="contato-icone">
+                <span class="contato-texto">team@sicron.or</span>
             </div>
-
         </div>
+
     </footer>
 
     <script src="/script/darkmode.js"></script>

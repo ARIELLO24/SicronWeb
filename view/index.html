@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../style/styles.css">
     <link rel="stylesheet" href="../style/modal.css">
 </head>
- 
+
 <!-- Modal de doação rapida -->
 <div id="modalDoacao" class="modal">
     <div class="modal-conteudo">
@@ -20,13 +20,14 @@
         <!-- Formulario de doação -->
         <div class="Container-doar">
             <div class="Doar-card">
-                <div style="align-items: center; gap: 10px; color: rgba(18, 66, 52, 1); font-size: 24px;">
-                    <img src="../assets/Logo.svg" alt="internet" style="max-height: 30px; width: auto;">
+                <div class="Info">
+                    <img src="../assets/Logo.svg" alt="internet">
                     SICRON
-                    <h1 style="font-size: 16px;">Seus Dados</h1>
-                    <p style="font-size: 12px;">Para continuar com o pagamento, precisamos que você nos forneça algumas
+                    <h1>Seus Dados</h1>
+                    <p>Para continuar com o pagamento, precisamos que você nos forneça algumas
                         informações.</p>
                 </div>
+
                 <!-- Campo de nome-->
                 <form action="#" method="POST" class="Doar-rapido">
                     <div class="Grupo-input">
@@ -45,7 +46,7 @@
                         <label for="nascimento" class="form-label">Data de Nascimento</label>
                         <input type="date" id="nascimento" name="nascimento" class="Form-input" required>
                     </div>
- 
+
                     <button type="submit" class="Botao-proximo">Próximo</button>
                 </form>
             </div>
@@ -53,7 +54,7 @@
     </div>
 </div>
 <!-- Fim do modal-->
- 
+
 <body>
     <!-- Cabeçalho -->
     <header class="Site-header">
@@ -67,14 +68,14 @@
             <nav class="Main-nav" aria-label="Main navigation">
                 <a href="#" class="Nav-link">Inicio</a>
                 <a href="#" class="Nav-link">ONGs</a>
-                <button style="color:white; background-color:#095202; border-radius: 30px;"
-                    onclick="abrirModal()">Doação Rápida</button>
+                <button class="doacao-btn" onclick="abrirModal()">Doação Rápida</button>
                 <a href="../view/Sobre.html" class="Nav-link">Sobre nós</a>
-                <button id="darkModeToggle">🌓 Modo Escuro</button>
+                <button id="darkModeToggle" class="modo-escuro-btn">🌓 Modo Escuro</button>
+
             </nav>
         </div>
         <!-- Fim do cabeçalho-->
- 
+
     </header>
     <!-- Seção estatistica -->
     <section class="Secao-doadores">
@@ -89,23 +90,23 @@
                     <img src="../assets/pessoas.jpeg" alt="Conectando doadores">
                 </div>
             </div>
- 
+
             <div id="israelCards" class="cards-container">
                 <div class="cardC">
                     <h3>281</h3>
                     <p>ONGs cadastradas</p>
                 </div>
- 
+
                 <div class="cardCV">
                     <h3>R$ 1.567,92</h3>
                     <p>Valor total arrecadado</p>
                 </div>
- 
+
                 <div class="cardCO">
                     <h3>17</h3>
                     <p>ONGs beneficiadas</p>
                 </div>
- 
+
                 <div class="cardC">
                     <h3>8</h3>
                     <p>Fornecedores parceiros</p>
@@ -114,15 +115,15 @@
         </div>
     </section>
     <!-- Fim da estatistica -->
- 
+
     <!-- Seção de doações-->
     <main class="Conteudo-principal">
         <div class="Titulo">
             <h1>Nossas ONGs</h1>
             <p>Conheça as organizações que estão tranformando vidas<br>através de projetos impactantes</p>
         </div>
- 
- 
+
+
         <div class="Search-filter">
             <input type="text" placeholder="Digite aqui para buscar...">
             <select>
@@ -141,8 +142,8 @@
                 <option>BH</option>
             </select>
         </div>
- 
- 
+
+
         <div class="cards-container">
             <div class="card">
                 <div class="card-header">
@@ -151,32 +152,32 @@
                     </div>
                     <div class="card-titulo"> 4 Patas </div>
                     <div class="card-status"><span>São leopoldo</span>
- 
+
                     </div>
                 </div>
                 <div class="card-content">
-                    <div class="card-descricao">Por favor, temos fome</div>
+                    <div class="card-descricao">Por favor, queremos alimentos</div>
                     <div class="card-divider"></div>
                     <div class="card-highlight"><strong>Dinheiro</strong></div>
                 </div>
- 
+
                 <div class="card-footer">
                     <button> Visualizar tudo </button>
                 </div>
             </div>
- 
+
             <div class="card">
                 <div class="card-header">
                     <div class="imagem-conteudo">
                         <img src="../assets/judeus.jpeg" alt="Pessoas">
                     </div>
-                    <div class="card-titulo"> Judeu party </div>
+                    <div class="card-titulo"> Judeus </div>
                     <div class="card-status">
-                        <span> Ismael </span>
+                        <span> Israel </span>
                     </div>
                 </div>
                 <div class="card-content">
-                    <div class="card-descricao"> Quermo faze festa </div>
+                    <div class="card-descricao"> Queremos viver</div>
                     <div class="card-divider"></div>
                     <div class="card-highlight"><strong>Dinheiro</strong></div>
                 </div>
@@ -184,19 +185,19 @@
                     <button> Visualizar tudo </button>
                 </div>
             </div>
- 
+
             <div class="card">
                 <div class="card-header">
                     <div class="imagem-conteudo">
                         <img src="../assets/mamaco.jpeg" alt="Pessoas fazendo doações">
                     </div>
-                    <div class="card-titulo">Mamacos Taca-Bosa</div>
+                    <div class="card-titulo">Mamacos da tailandia</div>
                     <div class="card-status">
-                        <span>Anérica da Morte</span>
+                        <span>India</span>
                     </div>
                 </div>
                 <div class="card-content">
-                    <div class="card-descricao">Mim ajude</div>
+                    <div class="card-descricao">precisamos de ajuda</div>
                     <div class="card-divider"></div>
                     <div class="card-highlight"><strong>Banana</strong></div>
                 </div>
@@ -205,17 +206,19 @@
                 </div>
             </div>
         </div>
-        <div class="ONGs"> <a href="#"> <button style="color:rgba(0, 157, 255, 1); border: none;">Visualizar as
-                    ONGs ></button></a></div>
+
+        <div class="ONGs">
+            <a href="#" class="btn-visualizar">Visualizar as ONGs ></a>
+        </div>
         <!-- Fim de doações-->
     </main>
- 
+
     <footer>
         <!-- Se quiser botar -->
     </footer>
     <script src="../script/modal.js"></script>
     <script src="../script/darkmode.js"></script>
- 
+
 </body>
- 
+
 </html>

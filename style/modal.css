@@ -55,6 +55,26 @@
     transform: translateY(-5px);
 }
 
+.Info {
+    align-items: center;
+    gap: 10px;
+    color: rgba(18, 66, 52, 1);
+    font-size: 24px;
+}
+
+.Info img {
+    max-height: 30px;
+    width: auto;
+}
+
+.Info h1 {
+    font-size: 20px;
+}
+
+.Info p {
+    font-size: 12px;
+}
+
 .Doar-rapido {
     display: flex;
     flex-direction: column;
@@ -108,7 +128,7 @@
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .Grupo-lado-a-lado .Grupo-input {
