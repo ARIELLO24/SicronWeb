@@ -579,7 +579,7 @@ body.dark-mode,
 }
 
 button[type="submit"] {
-    background-color: #3498db;
+    background-color: #4CAF50;
     color: white;
     padding: 1rem;
     border: none;
@@ -590,5 +590,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #2980b9;
+    background-color: #034106;
 }
