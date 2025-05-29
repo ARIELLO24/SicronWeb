@@ -31,13 +31,13 @@ body.dark-mode,
     width: 100%;
     position: static;
     top: 0;
-    background: white;
+    background: rgba(255, 255, 255, 1);
     z-index: 1000;
 }
 
 .dark-mode .Site-header {
     background-color: #000000;
-    color: white;
+    color: rgba(255, 255, 255, 1);
 }
 
 .Header-container {
@@ -127,6 +127,8 @@ body.dark-mode,
 #darkModeToggle {
     border-radius: 30px;
 }
+
+/* */
 
 .Secao-doadores {
     padding: 60px 0;
@@ -280,29 +282,10 @@ body.dark-mode,
     background-color: #e9ecef;
 }
 
-.Titulo-Sobre {
-    color: rgba(43, 43, 43, 0.7);
-    font-size: 20px;
-    padding: 50px;
-    text-align: center;
-}
-
-.Titulo-Sobre h1 {
-    color: yellow;
-    font-size: 86px;
-    text-align: justify;
-    text-decoration: underline;
-}
-
-.Titulo-Sobre p {
-    font-size: 24px;
-    text-align: justify;
-}
-
 .Titulo {
     text-align: center;
     font-size: 25px;
-    margin: 80px;
+    padding: 35px;
 }
 
 .dark-mode .Titulo {
@@ -453,33 +436,159 @@ body.dark-mode,
     background-color: #034106;
 }
 
-footer {
+/*COMO FUNCIONA*/
+.como-funciona {
+    background-color: rgba(69, 196, 130, 1);
+    padding: 4rem 0;
     text-align: center;
 }
 
-.BotoesDoacao {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+.como-funciona .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.contato-container {
+.como-funciona h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.como-funciona .subtitulo {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 3rem;
+}
+
+.passos {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.passo {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 50px;
-    padding: 100px;
 }
 
-.contato-item {
+.passo-icon {
+    margin-bottom: 1.5rem;
+}
+
+.passo-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.passo h3 {
+    color: #3498db;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.passo p {
+    color: #34495e;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/*FOOTER*/
+.site-footer {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    padding: 3rem 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
-    gap: 10px;
-    color: rgba(18, 66, 52, 1);
-    font-size: 24px;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 20px;
 }
 
-.contato-icone {
-    max-height: 30px;
-    width: auto;
+.footer-join {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-join h2 {
+    font-size: 50px;
+    margin-bottom: 1rem;
+    color: #3498db;
+}
+
+.footer-join p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.footer-contact {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-contact h3 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+    color: #3498db;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: none;
+    background-color: #34495e;
+    color: white;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
 }

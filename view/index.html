@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../style/modal.css">
 </head>
 
-<!-- Modal de doação rapida -->
+<!--Modal de doação rapida-->
 <div id="modalDoacao" class="modal">
     <div class="modal-conteudo">
         <span class="fechar" onclick="fecharModal()">&times;</span>
@@ -53,10 +53,10 @@
         </div>
     </div>
 </div>
-<!-- Fim do modal-->
+<!--Modal de doação rapida-->
 
 <body>
-    <!-- Cabeçalho -->
+    <!--Cabeçalho-->
     <header class="Site-header">
         <div class="Header-container">
             <div class="Logo">
@@ -66,15 +66,15 @@
                 <span class="Nome-site">Sicron</span>
             </div>
             <nav class="Main-nav" aria-label="Main navigation">
-                <a href="#" class="Nav-link">Inicio</a>
+                <a href="#" class="Nav-link">INICIO</a>
                 <a href="#" class="Nav-link">ONGs</a>
                 <button class="doacao-btn" onclick="abrirModal()">Doação Rápida</button>
-                <a href="../view/Sobre.html" class="Nav-link">Sobre nós</a>
-                <button id="darkModeToggle" class="modo-escuro-btn">🌓 Modo Escuro</button>
+                <a href="../view/Sobre.html" class="Nav-link">SOBRE NÓS</a>
+                <button id="darkModeToggle" class="modo-escuro-btn">🌓 MODO ESCURO</button>
 
             </nav>
         </div>
-        <!-- Fim do cabeçalho-->
+        <!--Cabeçalho-->
 
     </header>
     <!-- Seção estatistica -->
@@ -114,7 +114,7 @@
             </div>
         </div>
     </section>
-    <!-- Fim da estatistica -->
+    <!-- Seção estatistica -->
 
     <!-- Seção de doações-->
     <main class="Conteudo-principal">
@@ -210,12 +210,88 @@
         <div class="ONGs">
             <a href="#" class="btn-visualizar">Visualizar as ONGs ></a>
         </div>
-        <!-- Fim de doações-->
+        <!-- Seção de doações-->
     </main>
 
-    <footer>
-        <!-- Se quiser botar -->
+    <!--Como Funciona-->
+    <section class="como-funciona">
+        <div class="container">
+            <h2>Como Funciona</h2>
+            <p class="subtitulo">Doar nunca foi tão simples e transparente</p>
+
+            <div class="passos">
+                <div class="passo">
+                    <div class="passo-icon">
+                        <img src="caminho/para/icone1.svg" alt="Ícone ONS" width="50" height="50">
+                    </div>
+                    <h3>ONGs Cadastram suas Necessidades</h3>
+                    <p>Organizações valiosas por 50.000%! Idiane fazer priorários, especificando quantidades e detalhes.
+                    </p>
+                </div>
+
+                <div class="passo">
+                    <div class="passo-icon">
+                        <img src="caminho/para/icone2.svg" alt="Ícone Doadores" width="50" height="50">
+                    </div>
+                    <h3>Doadores Escolhem Como Ajudar</h3>
+                    <p>Navegue pelo catálogo de ONSs, filme por outra ou região e selecione os itens que deseja
+                        patrocinar.</p>
+                </div>
+
+                <div class="passo">
+                    <div class="passo-icon">
+                        <img src="caminho/para/icone3.svg" alt="Ícone Plataforma" width="50" height="50">
+                    </div>
+                    <h3>A Plataforma Cuida de Tudo</h3>
+                    <p>Seu dinheiro vira cedido que fica na plataforma, onde o ONS escolhe fornecedores com preços
+                        expostos, faz a compra e reúnice os itens, sem idar condutindo físico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Como Funciona-->
+
+    <!--Footer-->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-join">
+                <h2>Junte-se à nós!</h2>
+                <p>Seja doador, OMG ou fornecedor - juntos podemos criar um impacto real. Cadastro-se agora e ajude a
+                    transformar vidas com transparência e eficiência.</p>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Entre em Contato</h3>
+                <p>Precisa de ajuda ou foca com alguma dúvida? Envia seu mensagem</p>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" placeholder="Sem nome completo">
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <select id="subject">
+                            <option>Reclamar do site estiver uma merda</option>
+                            <option>Reclamar do antissemitismo</option>
+                            <option>Dinheiro mal gasto</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" placeholder="Sua mensagem"></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
     </footer>
+    <!--Footer-->
+
     <script src="../script/modal.js"></script>
     <script src="../script/darkmode.js"></script>
 
