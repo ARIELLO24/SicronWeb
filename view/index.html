@@ -56,7 +56,7 @@
 <!--Modal de doação rapida-->
 
 <body>
-    <!--Cabeçalho-->
+    <!--HEADER-->
     <header class="Site-header">
         <div class="Header-container">
             <div class="Logo">
@@ -66,28 +66,28 @@
                 <span class="Nome-site">Sicron</span>
             </div>
             <nav class="Main-nav" aria-label="Main navigation">
-                <a href="#" class="Nav-link">INICIO</a>
-                <a href="#" class="Nav-link">ONGs</a>
+                <a href="#" class="Nav-link">Inicio</a>
+                <a href="/desenvolvimento/CatalogoONGs.html" class="Nav-link">ONGs</a>
                 <button class="doacao-btn" onclick="abrirModal()">Doação Rápida</button>
-                <a href="../view/Sobre.html" class="Nav-link">SOBRE NÓS</a>
+                <a href="../view/Sobre.html" class="Nav-link">Sobre nós</a>
                 <button id="darkModeToggle" class="modo-escuro-btn">🌓 MODO ESCURO</button>
 
             </nav>
         </div>
-        <!--Cabeçalho-->
+        <!--HEADER-->
 
     </header>
-    <!-- Seção estatistica -->
+    <!--SECTION Doadores-->
     <section class="Secao-doadores">
         <div class="Container">
             <div class="Apresentação_conteudo">
                 <div class="Texto-conteudo">
-                    <h1>Conectando doadores a quem realmente precisa</h1>
-                    <p>Faça a diferença na vida de pessoas de forma segura e transparente</p>
-                    <a href="#" class="Botao">Explorar ONGs</a>
+                    <h1>Conectando doadores<br>a quem realmente precisa</h1>
+                    <p>Faça a diferença na vida de pessoas de<br>forma segura e transparente</p>
+                    <a href="/desenvolvimento/CatalogoONGs.html" class="Botao">Explorar ONGs</a>
                 </div>
                 <div class="Imagem-conteudo">
-                    <img src="../assets/pessoas.jpeg" alt="Conectando doadores">
+                    <img src="../assets/humildade.webp" alt="Conectando doadores">
                 </div>
             </div>
 
@@ -114,9 +114,9 @@
             </div>
         </div>
     </section>
-    <!-- Seção estatistica -->
+    <!--SECTION Doadores-->
 
-    <!-- Seção de doações-->
+    <!--MAIN doações-->
     <main class="Conteudo-principal">
         <div class="Titulo">
             <h1>Nossas ONGs</h1>
@@ -143,8 +143,7 @@
             </select>
         </div>
 
-
-        <div class="cards-container">
+        <div class="cards-container2">
             <div class="card">
                 <div class="card-header">
                     <div class="imagem-conteudo">
@@ -205,15 +204,16 @@
                     <button> Visualizar tudo </button>
                 </div>
             </div>
+
+            <div class="ONGs">
+                <a href="/desenvolvimento/CatalogoONGs.html" class="btn-visualizar">Visualizar as ONGs ></a>
+            </div>
         </div>
 
-        <div class="ONGs">
-            <a href="#" class="btn-visualizar">Visualizar as ONGs ></a>
-        </div>
-        <!-- Seção de doações-->
     </main>
+    <!--MAIN doações-->
 
-    <!--Como Funciona-->
+    <!--SECTION COMO FUNCIONA-->
     <section class="como-funciona">
         <div class="container">
             <h2>Como Funciona</h2>
@@ -222,7 +222,7 @@
             <div class="passos">
                 <div class="passo">
                     <div class="passo-icon">
-                        <img src="caminho/para/icone1.svg" alt="Ícone ONS" width="50" height="50">
+                        <img src="/assets/icons8-comestível-48.png" alt="Ícone ONS" width="50" height="50">
                     </div>
                     <h3>ONGs Cadastram suas Necessidades</h3>
                     <p>Organizações,especificando quantidades e detalhes.
@@ -231,7 +231,7 @@
 
                 <div class="passo">
                     <div class="passo-icon">
-                        <img src="caminho/para/icone2.svg" alt="Ícone Doadores" width="50" height="50">
+                        <img src="/assets/icons8-confiança-50.png" alt="Ícone Doadores" width="50" height="50">
                     </div>
                     <h3>Doadores Escolhem Como Ajudar</h3>
                     <p>Navegue pelo catálogo de ONGs, filtre por região e selecione os itens que deseja
@@ -240,7 +240,7 @@
 
                 <div class="passo">
                     <div class="passo-icon">
-                        <img src="caminho/para/icone3.svg" alt="Ícone Plataforma" width="50" height="50">
+                        <img src="/assets/icons8-ciclo-40.png" alt="Ícone Plataforma" width="50" height="50">
                     </div>
                     <h3>A Plataforma Cuida de Tudo</h3>
                     <p>Seu dinheiro vira historia que fica na plataforma, onde a ONG escolhe fornecedores com preços
@@ -249,38 +249,39 @@
             </div>
         </div>
     </section>
-    <!--Como Funciona-->
+    <!--SECTION COMO FUNCIONA-->
 
-    <!--Footer-->
-    <footer class="site-footer">
-        <div class="footer-content">
-            <div class="footer-join">
+    <!--SECTION INFO-->
+    <section class="area-impacto">
+        <div class="conteudo-impacto">
+            <div class="convite-engajamento">
                 <h2>Junte-se à nós!</h2>
-                <p>Seja doador, ONG ou fornecedor - juntos podemos criar um impacto real. Cadastro-se agora e ajude a
+                <p>Seja doador, ONG ou fornecedor - juntos podemos criar um impacto real. Cadastre-se agora e ajude a
                     transformar vidas com transparência e eficiência.</p>
             </div>
 
-            <div class="footer-contact">
+            <div class="contato-ajuda">
                 <h3>Entre em Contato</h3>
-                <p>Precisa de ajuda ou foca com alguma dúvida? Envia seu mensagem</p>
+                <p>Precisa de ajuda ou ficou com alguma dúvida? Envie sua mensagem</p>
 
-                <form class="contact-form">
-                    <div class="form-group">
+                <form class="formulario-contato">
+                    <div class="grupo-formulario">
                         <label for="name">Nome</label>
-                        <input type="text" id="name" placeholder="Sem nome completo">
+                        <input type="text" id="name" placeholder="Seu nome completo">
                         <input type="email" placeholder="Email">
                     </div>
 
-                    <div class="form-group">
+                    <div class="grupo-formulario">
                         <label for="subject">Assunto</label>
                         <select id="subject">
+                            <option></option>
                             <option>Reclamar do site estiver uma merda</option>
                             <option>Reclamar do antissemitismo</option>
                             <option>Dinheiro mal gasto</option>
                         </select>
                     </div>
 
-                    <div class="form-group">
+                    <div class="grupo-formulario">
                         <label for="message">Mensagem</label>
                         <textarea id="message" placeholder="Sua mensagem"></textarea>
                     </div>
@@ -289,11 +290,49 @@
                 </form>
             </div>
         </div>
+    </section>
+    <!--SECTION INFO-->
+
+    <footer class="rodape-ongs">
+        <div class="container-rodape">
+            <div class="logo-rodape">
+                <h2>SICRON</h2>
+                <p>Transformando vidas com transparência e impacto social.</p>
+            </div>
+
+            <div class="links-rodape">
+                <h3>Links úteis</h3>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">ONGs</a></li>
+                </ul>
+            </div>
+
+            <div class="contato-rodape">
+                <h3>Fale Conosco</h3>
+                <p>Email: team@sicron.org</p>
+                <p>Telefone: (51) 99699-7859</p>
+            </div>
+
+            <div class="redes-rodape">
+                <h3>Redes Sociais</h3>
+                <div class="icones-redes">
+                    <a href="#"><img src="#" alt="Facebook"></a>
+                    <a href="#"><img src="#" alt="Instagram"></a>
+                    <a href="#"><img src="#" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="direitos">
+            <p>&copy; 2025 SICRON. Todos os direitos reservados.</p>
+        </div>
     </footer>
-    <!--Footer-->
+
 
     <script src="../script/modal.js"></script>
-    <script src="../script/darkmode.js"></script>
+    <!--<script src="../script/darkmode.js"></script> -->
 
 </body>
 

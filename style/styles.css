@@ -2,6 +2,7 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* HEADER*/
 body.dark-mode,
 .dark-mode .Secao-doadores {
     background-color: #000000;
@@ -23,7 +24,7 @@ body.dark-mode,
             var(--roxo-profundo) 50%,
             var(--roxo-medio) 75%,
             var(--roxo-vivo) 100%);
-    color: white;
+    color: black;
 }
 
 .Site-header {
@@ -44,7 +45,7 @@ body.dark-mode,
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 10px;
     display: flex;
     align-items: center;
     position: relative;
@@ -128,8 +129,9 @@ body.dark-mode,
     border-radius: 30px;
 }
 
-/* */
+/* HEADER*/
 
+/* SECTION Doadores*/
 .Secao-doadores {
     padding: 60px 0;
     background-color: #f8f9fa;
@@ -163,9 +165,13 @@ body.dark-mode,
     margin-bottom: 30px;
 }
 
-.Texto-conteudo {
-    font-size: 20px;
+.Texto-conteudo h1 {
+    font-size: 40px;
     flex: 1;
+}
+
+.Texto-conteudo p {
+    font-size: 20px;
 }
 
 .Botao {
@@ -178,12 +184,6 @@ body.dark-mode,
     font-weight: bold;
     transition: background-color 0.3s;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.Botao:hover {
-    background: linear-gradient(45deg, #4AC47F, #FFD600);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
 }
 
 .Imagem-conteudo {
@@ -278,15 +278,20 @@ body.dark-mode,
     font-size: 0.9rem;
 }
 
+/* SECTION Doadores*/
+
+/* MAIN doações */
 .Conteudo-principal {
     background-color: #e9ecef;
 }
 
 .Titulo {
+    color: rgba(43, 43, 43, 0.7);
     text-align: center;
     font-size: 25px;
     padding: 35px;
 }
+
 
 .dark-mode .Titulo {
     color: white;
@@ -317,7 +322,16 @@ body.dark-mode,
     background: white;
 }
 
-.cards-container {
+.cards-container>div {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 80px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+.cards-container2 {
     display: flex;
     flex-wrap: wrap;
     padding: 100px;
@@ -409,9 +423,8 @@ body.dark-mode,
 
 .card-footer button {
     width: 90%;
-    border-radius: 15px;
     padding: 10px;
-    background: linear-gradient(135deg, #5eff01);
+    background: rgba(69, 196, 130, 1);
     color: #000;
     font-size: 20px;
     border: 0px;
@@ -423,28 +436,24 @@ body.dark-mode,
 }
 
 .btn-visualizar {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+    color: rgba(0, 157, 255, 1);
+    padding: 10px;
     text-decoration: none;
-    border-radius: 5px;
     display: inline-block;
     font-weight: bold;
 }
 
-.btn-visualizar:hover {
-    background-color: #034106;
-}
+/*MAIN doações*/
 
-/*COMO FUNCIONA*/
+/*SECTION Como funciona*/
 .como-funciona {
-    background-color: rgba(69, 196, 130, 1);
+    background-color: white;
     padding: 4rem 0;
     text-align: center;
 }
 
 .como-funciona .container {
-    max-width: 1200px;
+    max-width: max-content;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -457,8 +466,9 @@ body.dark-mode,
 
 .como-funciona .subtitulo {
     font-size: 1.2rem;
-    color: rgba(255, 255, 255, 1);
+    color: #2c3e50;
     margin-bottom: 3rem;
+    font-weight: bold;
 }
 
 .passos {
@@ -471,10 +481,7 @@ body.dark-mode,
 .passo {
     flex: 1;
     min-width: 300px;
-    background: white;
     padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -491,27 +498,29 @@ body.dark-mode,
 }
 
 .passo h3 {
-    color: #3498db;
+    color: black;
     margin-bottom: 1rem;
     font-size: 1.3rem;
     text-align: center;
 }
 
 .passo p {
-    color: #34495e;
+    color: rgba(43, 43, 43, 0.7);
     line-height: 1.6;
     text-align: center;
 }
 
-/*FOOTER*/
-.site-footer {
+/*SECTION Como funciona*/
+
+/*SECTION INFO*/
+.area-impacto {
     background-color: rgba(255, 255, 255, 1);
     color: black;
     padding: 3rem 0;
     font-family: Arial, sans-serif;
 }
 
-.footer-content {
+.conteudo-impacto {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -520,60 +529,63 @@ body.dark-mode,
     padding: 0 20px;
 }
 
-.footer-join {
+.convite-engajamento {
     flex: 1;
     min-width: 300px;
 }
 
-.footer-join h2 {
+.convite-engajamento h2 {
     font-size: 50px;
     margin-bottom: 1rem;
-    color: #3498db;
+    color: #017207;
 }
 
-.footer-join p {
+.convite-engajamento p {
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
 
-.footer-contact {
+.contato-ajuda {
     flex: 1;
     min-width: 300px;
 }
 
-.footer-contact h3 {
+.contato-ajuda h3 {
     font-size: 30px;
     margin-bottom: 1rem;
-    color: #3498db;
+    color: rgba(43, 43, 43, 0.7)ck;
 }
 
-.contact-form {
+.contato-ajuda p {
+    font-weight: 300;
+}
+
+.formulario-contato {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.form-group {
+.grupo-formulario {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.form-group label {
+.grupo-formulario label {
     font-weight: bold;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
+.grupo-formulario input,
+.grupo-formulario select,
+.grupo-formulario textarea {
     padding: 0.8rem;
     border-radius: 4px;
-    border: none;
-    background-color: #34495e;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
-.form-group textarea {
+.grupo-formulario textarea {
     min-height: 100px;
     resize: vertical;
 }
@@ -591,4 +603,77 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #034106;
+}
+
+/*SECTION INFO*/
+
+/* FOOTER*/
+
+.rodape-ongs {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.container-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.rodape-ongs h2,
+.rodape-ongs h3 {
+    color: #1abc9c;
+}
+
+.logo-rodape {
+    flex: 1 1 250px;
+}
+
+.links-rodape,
+.contato-rodape,
+.redes-rodape {
+    flex: 1 1 200px;
+}
+
+.links-rodape ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links-rodape li {
+    margin-bottom: 10px;
+}
+
+.links-rodape a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.links-rodape a:hover {
+    color: #1abc9c;
+}
+
+.icones-redes a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.icones-redes img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
+
+.direitos {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #bdc3c7;
 }
