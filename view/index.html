@@ -11,6 +11,7 @@
     <link rel="IconeSite" href="../assets/Logo.svg">
     <link rel="stylesheet" href="../style/styles.css">
     <link rel="stylesheet" href="../style/modal.css">
+    <link rel="stylesheet" href="../style/components/Site-header.css">
 </head>
 
 <!--Modal de doação rapida-->
@@ -66,17 +67,14 @@
                 <span class="Nome-site">Sicron</span>
             </div>
             <nav class="Main-nav" aria-label="Main navigation">
-                <a href="#" class="Nav-link">Inicio</a>
-                <a href="#" class="Nav-link">ONGs</a>
-                <button class="doacao-btn" onclick="abrirModal()">Doação Rápida</button>
+                <a href="index.html" class="Nav-link">Inicio</a>
+                <a href="#Conteudo-principal" class="Nav-link">ONGs</a>
                 <a href="../view/Sobre.html" class="Nav-link">Sobre nós</a>
-                <button id="darkModeToggle" class="modo-escuro-btn">🌓 MODO ESCURO</button>
-
+                <!-- <button id="darkModeToggle" class="modo-escuro-btn">🌓 MODO ESCURO</button> -->
             </nav>
         </div>
-        <!--HEADER-->
-
     </header>
+    
     <!--SECTION Doadores-->
     <section class="Secao-doadores">
         <div class="Container">
@@ -84,7 +82,8 @@
                 <div class="Texto-conteudo">
                     <h1>Conectando doadores<br>a quem realmente precisa</h1>
                     <p>Faça a diferença na vida de pessoas de<br>forma segura e transparente</p>
-                    <a href="/desenvolvimento/CatalogoONGs.html" class="Botao">Explorar ONGs</a>
+                    <!-- <a href="/desenvolvimento/CatalogoONGs.html" class="Botao">Explorar ONGs</a> -->
+                    <button class="Botao-doacaoRap" onclick="abrirModal()">Doação Rápida</button>
                 </div>
                 <div class="Imagem-conteudo">
                     <img src="../assets/humildade.webp" alt="Conectando doadores">
@@ -92,22 +91,22 @@
             </div>
 
             <div id="israelCards" class="cards-container">
-                <div class="cardC">
+                <div id="cardC" class="cards-ex">
                     <h3>281</h3>
                     <p>ONGs cadastradas</p>
                 </div>
 
-                <div class="cardCV">
+                <div id="cardCV" class="cards-ex">
                     <h3>R$ 1.567,92</h3>
                     <p>Valor total arrecadado</p>
                 </div>
 
-                <div class="cardCO">
+                <div id="cardCO" class="cards-ex">
                     <h3>17</h3>
                     <p>ONGs beneficiadas</p>
                 </div>
 
-                <div class="cardC">
+                <div id="cardC" class="cards-ex">
                     <h3>8</h3>
                     <p>Fornecedores parceiros</p>
                 </div>
@@ -117,7 +116,7 @@
     <!--SECTION Doadores-->
 
     <!--MAIN doações-->
-    <main class="Conteudo-principal">
+    <main id="Conteudo-principal" class="Conteudo-principal">
         <div class="Titulo">
             <h1>Nossas ONGs</h1>
             <p>Conheça as organizações que estão tranformando vidas<br>através de projetos impactantes</p>

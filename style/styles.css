@@ -27,77 +27,7 @@ body.dark-mode,
     color: black;
 }
 
-.Site-header {
-    text-align: center;
-    width: 100%;
-    position: static;
-    top: 0;
-    background: rgba(255, 255, 255, 1);
-    z-index: 1000;
-}
 
-.dark-mode .Site-header {
-    background-color: #000000;
-    color: rgba(255, 255, 255, 1);
-}
-
-.Header-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.Logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.Logo img {
-    height: 100%;
-    max-height: 45px;
-    width: auto;
-    transition: transform 0.3s ease;
-}
-
-.Logo img:hover {
-    transform: translateY(-2px);
-}
-
-.Nome-site {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.Main-nav {
-    display: flex;
-    gap: 2rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.Main-nav input {
-    background: #f8f9fa;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.Nav-link {
-    text-decoration: none;
-    font-size: 1.05rem;
-    padding: 0.5rem 0;
-    transition: all var(--transition-speed) ease;
-    position: relative;
-}
-
-.Nav-link:hover {
-    color: #007bff;
-}
 
 .doacao-btn {
     background-color: #0bd615;
@@ -174,16 +104,26 @@ body.dark-mode,
     font-size: 20px;
 }
 
-.Botao {
+.Botao-doacaoRap {
     display: inline-block;
     padding: 12px 30px;
     background: linear-gradient(45deg, #FFD600, #4AC47F);
     color: white;
-    text-decoration: none;
+    border: 0;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.Botao-doacaoRap:hover {
+   transform: scale(1.1);
+   transition: transform 0.5s ease;
+}
+
+.Botao-doacaoRap:not(:hover) {
+   transform: scale(1);
+   transition: transform 1s ease;
 }
 
 .Imagem-conteudo {
@@ -203,7 +143,16 @@ body.dark-mode,
     gap: 10px;
 }
 
-.cardCO {
+.cards-ex {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.cards-ex:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+#cardCO {
     background: #d8f3dc;
     padding: 25px;
     border-radius: 10px;
@@ -211,36 +160,20 @@ body.dark-mode,
     text-align: center;
 }
 
-.cardCO:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s ease;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
-}
 
-.cardCV:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s ease;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
-}
 
-.cardC:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s ease;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
-}
-
-.cardCO h3 {
+#cardCO h3 {
     font-size: 2rem;
     margin-bottom: 10px;
     color: #095202;
 }
 
-.cardCO p {
+#cardCO p {
     color: #666;
     font-size: 0.9rem;
 }
 
-.cardCV {
+#cardCV {
     background: #e2d4f0;
     padding: 25px;
     border-radius: 10px;
@@ -248,18 +181,18 @@ body.dark-mode,
     text-align: center;
 }
 
-.cardCV h3 {
+#cardCV h3 {
     font-size: 2rem;
     margin-bottom: 10px;
     color: #120453;
 }
 
-.cardCV p {
+#cardCV p {
     color: #666;
     font-size: 0.9rem;
 }
 
-.cardC {
+#cardC {
     background: white;
     padding: 25px;
     border-radius: 10px;
@@ -267,13 +200,13 @@ body.dark-mode,
     text-align: center;
 }
 
-.cardC h3 {
+#cardC h3 {
     font-size: 2rem;
     margin-bottom: 10px;
     color: #007bff;
 }
 
-.cardC p {
+#cardC p {
     color: #666;
     font-size: 0.9rem;
 }
