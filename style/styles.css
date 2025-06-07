@@ -1,5 +1,8 @@
 * {
     font-family: 'Inter', sans-serif;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* HEADER*/
@@ -61,161 +64,11 @@ body.dark-mode,
 
 /* HEADER*/
 
-/* SECTION Doadores*/
-.Secao-doadores {
-    padding: 60px 0;
-    background-color: #f8f9fa;
-}
 
-.Container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.Apresentação_conteudo {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 60px;
-}
-
-.Texto-conteudoDoador {
-    flex: 1;
-}
-
-.Texto-conteudoDoador h1 {
-    margin-bottom: 20px;
-    color: rgba(18, 66, 52, 1);
-    font-size: 96px;
-}
-
-.Texto-conteudoDoador p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-}
-
-.Texto-conteudo h1 {
-    font-size: 40px;
-    flex: 1;
-}
-
-.Texto-conteudo p {
-    font-size: 20px;
-}
-
-.Botao-doacaoRap {
-    display: inline-block;
-    padding: 12px 30px;
-    background: linear-gradient(45deg, #FFD600, #4AC47F);
-    color: white;
-    border: 0;
-    border-radius: 5px;
-    font-weight: bold;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-}
-
-.Botao-doacaoRap:hover {
-   transform: scale(1.1);
-   transition: transform 0.5s ease;
-}
-
-.Botao-doacaoRap:not(:hover) {
-   transform: scale(1);
-   transition: transform 1s ease;
-}
-
-.Imagem-conteudo {
-    flex: 1;
-}
-
-.Imagem-conteudo img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-#israelCards {
-    margin-right: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-}
-
-.cards-ex {
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-.cards-ex:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
-
-#cardCO {
-    background: #d8f3dc;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-
-
-#cardCO h3 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #095202;
-}
-
-#cardCO p {
-    color: #666;
-    font-size: 0.9rem;
-}
-
-#cardCV {
-    background: #e2d4f0;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-#cardCV h3 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #120453;
-}
-
-#cardCV p {
-    color: #666;
-    font-size: 0.9rem;
-}
-
-#cardC {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-#cardC h3 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #007bff;
-}
-
-#cardC p {
-    color: #666;
-    font-size: 0.9rem;
-}
-
-/* SECTION Doadores*/
 
 /* MAIN doações */
 .Conteudo-principal {
-    background-color: #e9ecef;
+    background-color: rgba(69, 196, 130, 1);
 }
 
 .Titulo {
@@ -255,14 +108,7 @@ body.dark-mode,
     background: white;
 }
 
-.cards-container>div {
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin: 80px;
-    border-radius: 8px;
-    width: 200px;
-    text-align: center;
-}
+
 
 .cards-container2 {
     display: flex;
