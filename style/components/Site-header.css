@@ -56,7 +56,6 @@
 .Nav-link {
     text-decoration: none;
     font-size: 1.05rem;
-    padding: 0.5rem 0;
     transition: all var(--transition-speed) ease;
     position: relative;
     color: #2c2c2c;
@@ -64,4 +63,5 @@
 
 .Nav-link:hover {
     color: #01fd09;
+    transform: translateY(-2px);
 }
