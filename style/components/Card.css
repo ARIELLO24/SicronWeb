@@ -1,0 +1,110 @@
+.card {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+.card-header {
+
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.imagem-conteudo {
+    width: 100%;
+    height: 160px;
+    /* Altura fixa para a imagem */
+    overflow: hidden;
+}
+
+.imagem-conteudo img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-titulo {
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    color: black;
+}
+
+.card-status {
+    font-size: 14px;
+    color: #666;
+}
+
+.card-content {
+    padding: 5px 15px;
+}
+
+.card-descricao {
+    font-size: 12px;
+    color: #666;
+    height: 50px;
+    padding-top: 5px;
+    
+}
+
+.card-divider {
+    height: 1.2px;
+    background-color: #e0e0e0;
+    margin: 0px;
+}
+
+.card-highlight {
+    height: 30px;
+
+    font-size: 10px;
+    color: black;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+
+.open-detail {
+    width: 70%;
+    padding: 10px;
+    background: rgba(69, 196, 130, 1);
+    color: white;
+    border: 0px;
+    cursor: pointer;
+}
+
+.fav-btn {
+    background-color: white;
+    color: #5a5a5a;
+    padding: 3px 6px;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.fav-btn:active {
+    color: rgba(69, 196, 130, 1);
+}

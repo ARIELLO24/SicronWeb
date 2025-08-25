@@ -1,0 +1,146 @@
+/* SECTION Doadores*/
+.Secao-doadores {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.Container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Apresentação_conteudo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.Texto-conteudoDoador {
+    flex: 1;
+}
+
+.Texto-conteudoDoador h1 {
+    margin-bottom: 20px;
+    color: rgba(18, 66, 52, 1);
+    font-size: 96px;
+}
+
+.Texto-conteudoDoador p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+
+
+.Texto-conteudo h1 {
+    font-size: 40px;
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.Texto-conteudo p {
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 3rem;
+}
+
+.Botao-doacaoRap {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #FFD600, #4AC47F);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.Botao-doacaoRap:hover {
+   transform: scale(1.1);
+   transition: transform 0.5s ease;
+}
+
+.Botao-doacaoRap:not(:hover) {
+   transform: scale(1);
+   transition: transform 1s ease;
+}
+
+.Imagem-conteudo {
+    flex: 1;
+}
+
+.Imagem-conteudo img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+
+
+.cards-ex {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cards-ex h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cards-ex p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.cards-ex:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+#cardCO {
+    background: #d8f3dc;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#cardCO h3 {
+    color: #095202;
+}
+
+
+#cardCV {
+    background: #e2d4f0;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#cardCV h3 {
+    color: #120453;
+}
+
+
+#cardC {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#cardC h3 {
+    color: #007bff;
+}
+
+
+/* SECTION Doadores*/
