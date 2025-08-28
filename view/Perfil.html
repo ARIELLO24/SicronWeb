@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../style/perfil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="IconeSite" href="../assets/Logo.svg">
+    <link rel="stylesheet" href="../style/modalP.css">
+    <link rel="stylesheet" href="../style/components/Site-header.css">
+</head>
+
+<!-- Modal Editar Perfil -->
+<div id="modalP" class="modalP">
+    <div class="modalP-conteudo">
+        <span class="fechar" onclick="fecharModalP()">&times;</span>
+
+        <div class="container-perfil">
+            <div class="perfil-card">
+                <div class="info-modal">
+                    <img src="../assets/Logo.svg" alt="logo">
+                    <h1>Editar Informações</h1>
+                    <p>Atualize seus dados pessoais abaixo.</p>
+                </div>
+
+                <!-- Formulário de edição -->
+                <form action="#" method="POST" class="perfil-form">
+                    <!-- Nome completo -->
+                    <div class="grupo-input">
+                        <label for="username" class="form-label">Nome completo</label>
+                        <input type="text" id="username" name="username" class="form-input" value="Natan da Silva"
+                            required>
+                    </div>
+
+                    <!-- Data de aniversário -->
+                    <div class="grupo-input">
+                        <label for="nascimento" class="form-label">Data de Nascimento</label>
+                        <input type="date" id="nascimento" name="nascimento" class="form-input" value="2030-07-05"
+                            required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="grupo-input">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" id="email" name="email" class="form-input" value="natan@gmail.com" required>
+                    </div>
+
+                    <!-- Local de residência -->
+                    <div class="grupo-input">
+                        <label for="residencia" class="form-label">Local de Residência</label>
+                        <input type="text" id="residencia" name="residencia" class="form-input"
+                            value="São Leopoldo - RS" required>
+                    </div>
+
+                    <!-- Doações realizadas -->
+                    <div class="grupo-input">
+                        <label for="doacoes" class="form-label">Doações Realizadas</label>
+                        <input type="number" id="doacoes" name="doacoes" class="form-input" value="4" min="0" required>
+                    </div>
+
+                    <!-- Sobre mim -->
+                    <div class="grupo-input">
+                        <label for="sobre" class="form-label">Sobre mim</label>
+                        <textarea id="sobre" name="sobre" class="form-input" rows="3" required>
+  Sou apaixonado por tecnologia e adoro ajudar pessoas. Sempre busco evoluir e aprender coisas novas.
+              </textarea>
+                    </div>
+
+                    <button type="submit" class="btn-salvar">Salvar Alterações</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<body>
+
+    <header class="Site-header">
+        <div class="Header-container">
+            <div class="Logo">
+                <a href="#">
+                    <img src="../assets/Logo.svg" alt="IconeONG" width="400" height="400">
+                </a>
+                <span class="Nome-site">Sicron</span>
+            </div>
+            <nav class="Main-nav" aria-label="Main navigation">
+                <a href="index.html" class="Nav-link">Inicio</a>
+                <a href="#Conteudo-principal" class="Nav-link">ONGs</a>
+                <a href="../view/Sobre.html" class="Nav-link">Sobre nós</a>
+                <a href="#" class="Nav-link">⚙️</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <h2 class="title">Seu Perfil</h2>
+            <p class="subtitle">Gerencie seus dados e veja tudo o que você fez recentemente por aqui.</p>
+
+            <!-- Card de informações pessoais -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Informações Pessoais</h3>
+                    <button class="edit-btn" onclick="abrirModalP()">✎ Editar</button>
+                </div>
+                <div class="info">
+                    <img src="/assets/IconGit.png" alt="Foto de Perfil" class="profile-pic">
+
+                    <div class="details">
+                        <p><span>Nome Completo:</span> Natan Gabriel da Silva</p>
+                        <p><span>Data de Aniversário:</span> 05/07/2030</p>
+                        <p><span>E-mail:</span> natan@gmail.com</p>
+                        <p><span>Local de Residência:</span> São Leopoldo - RS</p>
+                        <p><span>Doações Realizadas:</span> 4</p>
+                        <p><span>Sobre mim:</span> Sou apaixonado por tecnologia e adoro ajudar pessoas. Sempre busco
+                            evoluir e aprender coisas novas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card histórico -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Seu Histórico de Atividades</h3>
+                </div>
+                <p class="subtitle">Histórico de Doações Realizadas</p>
+                <ul class="history">
+                    <li>Teste</li>
+                    <li>Teste</li>
+                    <li>Tsete</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="/script/modalP.js"></script>
+</body>
+
+</html>
