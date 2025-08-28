@@ -1,27 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/desenvolvimento/cadastro.css">
+    <link rel="stylesheet" href="../style/components/Site-header.css">
 </head>
+
 <body>
 
-    <header>
-
-
+    <header class="Site-header">
+        <div class="Header-container">
+            <div class="Logo">
+                <a href="#">
+                    <img src="../assets/Logo.svg" alt="IconeONG" width="400" height="400">
+                </a>
+                <span class="Nome-site">Sicron</span>
+            </div>
+            <nav class="Main-nav" aria-label="Main navigation">
+                <a href="../view/index.html" class="Nav-link">Inicio</a>
+                <a href="#Conteudo-principal" class="Nav-link">ONGs</a>
+                <a href="../view/Sobre.html" class="Nav-link">Sobre nós</a>
+                <a href="../view/Perfil.html" class="Nav-link">⚙️</a>
+                <a href="#" class="Nav-link">👤</a>
+            </nav>
+        </div>
     </header>
 
     <main>
+        <div class="form-container">
+            <div class="logo">
+                <img src="/assets/Logo.svg" alt="Logo SICRON">
+                <h2>SICRON</h2>
+            </div>
+            <h1>Bem-Vindo!</h1>
+            <p>Veja como é rápido criar a sua conta!</p>
 
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Nome de usuário" required>
+                    <span class="icon">👤</span>
+                </div>
 
+                <div class="input-group">
+                    <input type="email" placeholder="E-mail" required>
+                    <span class="icon">✉️</span>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" placeholder="Senha" required>
+                    <span class="icon">🔒</span>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">
+                        Concordo que meus dados sejam utilizados para os devidos fins que constam nos termos e condições
+                        de usuários
+                    </label>
+                </div>
+
+                <button type="submit" class="btn">Criar minha conta</button>
+            </form>
+
+            <div class="login-link">
+                <a href="#">Já possui uma conta?</a>
+            </div>
+        </div>
     </main>
 
-    <footer>
-
-
-    </footer>
-    
 </body>
 </html>
