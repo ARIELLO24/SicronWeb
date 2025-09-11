@@ -63,179 +63,70 @@
 
 <body>
     <!--HEADER-->
-    <header class="Site-header">
-        <div class="Header-container">
-            <div class="Logo">
-                <a href="#">
-                    <img src="../assets/Logo.svg" alt="IconeONG" width="400" height="400">
-                </a>
-                <span class="Nome-site">Sicron</span>
-            </div>
-            <nav class="Main-nav" aria-label="Main navigation">
-                <a href="index.html" class="Nav-link">Inicio</a>
-                <a href="#Conteudo-principal" class="Nav-link">ONGs</a>
-                <a href="../view/Sobre.html" class="Nav-link">Sobre nós</a>
-                <a href="../view/Perfil.html" class="Nav-link">⚙️</a>
-                <a href="../desenvolvimento/cadastro.html" class="Nav-link">👤</a>
-            </nav>
+    <header class="public-Header">
+        <div class="Logo">
+            <a href="#">
+                <img src="../assets/Logo.svg" alt="IconeONG" width="400" height="400">
+            </a>
+            <span>Sicron</span>
         </div>
+        <nav class="Main-nav" aria-label="Main navigation">
+            <a href="index.html"            >Inicio</a>
+            <a href="#Conteudo-principal"   >ONGs</a>
+            <a href="../view/Sobre.html"    >Sobre nós</a>
+            <a href="../desenvolvimento/cadastro.html" >
+                <i class="fa-regular fa-user"></i>
+            </a>
+        </nav>
     </header>
     
     <!--SECTION Doadores-->
-    <section class="Secao-doadores">
-        <div class="Container">
-            <div class="Apresentação_conteudo">
+    <section class="section-Hero">
+        <div class="container-Hero">
+            
                 <div class="Texto-conteudo">
                     <h1>Conectando doadores<br>a quem realmente precisa</h1>
                     <p>Faça a diferença na vida de pessoas de<br>forma segura e transparente</p>
                     <button class="Botao-doacaoRap" onclick="abrirModal()">Doação Rápida</button>
                 </div>
+
                 <div class="Imagem-conteudo">
                     <img src="../assets/humildade.webp" alt="Conectando doadores">
                 </div>
             </div>
-
-            <div id="israelCards" class="cards-container">
-                <div id="cardC" class="cards-ex">
-                    <h3>281</h3>
-                    <p>ONGs cadastradas</p>
-                </div>
-
-                <div id="cardCV" class="cards-ex">
-                    <h3>R$ 1.567,92</h3>
-                    <p>Valor total arrecadado</p>
-                </div>
-
-                <div id="cardCO" class="cards-ex">
-                    <h3>17</h3>
-                    <p>ONGs beneficiadas</p>
-                </div>
-
-                <div id="cardC" class="cards-ex">
-                    <h3>8</h3>
-                    <p>Fornecedores parceiros</p>
-                </div>
-            </div>
-        </div>
+        
     </section>
     <!--SECTION Doadores-->
 
-    <!--MAIN doações-->
-    <main id="Conteudo-principal" class="Conteudo-principal">
-        <div class="Titulo">
-            <h1>Nossas ONGs</h1>
-            <p>Conheça as organizações que estão tranformando vidas<br>através de projetos impactantes</p>
-        </div>
-
-
-        <div class="Search-filter">
-            <label for="search-bar">Procura alguma em especifíco?</label>
-            <input name="search-bar" type="text" placeholder="Digite aqui para buscar...">
-        </div>
-
-        <div class="cards-container2">
-            <div class="card">
-                <div class="card-header">
-                    <div class="imagem-conteudo">
-                        <img src="../assets/cachorros.png" alt="Pessoas fazendo doações">
-                    </div>
-                    <div class="card-titulo"> 4 Patas </div>
-                    <div class="card-status"><span>São leopoldo</span>
-
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-descricao">Por favor, queremos alimentos</div>
-                    <div class="card-divider"></div>
-                    <div class="card-highlight"><strong>Dinheiro</strong></div>
-                </div>
-
-                <div class="card-footer">
-                    <button class="open-detail"> Saiba Mais </button>
-                    <button class="fav-btn"><span class="material-icons heart-icon">favorite_border</span></button>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <div class="imagem-conteudo">
-                        <img src="../assets/criança.jpg" alt="Pessoas">
-                    </div>
-                    <div class="card-titulo"> Crianças humildes</div>
-                    <div class="card-status">
-                        <span> Brasil </span>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-descricao"> Queremos viver</div>
-                    <div class="card-divider"></div>
-                    <div class="card-highlight"><strong>Dinheiro</strong></div>
-                </div>
-                <div class="card-footer">
-                    <button class="open-detail"> Saiba Mais </button>
-                    <button class="fav-btn"><span class="material-icons heart-icon">favorite_border</span></button>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <div class="imagem-conteudo">
-                        <img src="../assets/mamaco.jpeg" alt="Pessoas fazendo doações">
-                    </div>
-                    <div class="card-titulo">Mamacos da tailandia</div>
-                    <div class="card-status">
-                        <span>India</span>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <div class="card-descricao">precisamos de ajuda</div>
-                    <div class="card-divider"></div>
-                    <div class="card-highlight"><p><strong>Banana</strong></p></div>
-                </div>
-                <div class="card-footer">
-                    <button class="open-detail"> Saiba Mais </button>
-                    <button class="fav-btn"><span class="material-icons heart-icon">favorite_border</span></button>
-                </div>
-            </div>
-
-            
-        </div>
-
-        <div class="ONGs">
-            <a href="/desenvolvimento/CatalogoONGs.html" class="btn-visualizar">Visualizar Todas ></a>
-        </div>
-
-    </main>
-    <!--MAIN doações-->
-
     <!--SECTION COMO FUNCIONA-->
-    <section class="como-funciona">
-        <div class="container">
+    <section class="section-HowWork">
+        <div class="container-HowWork">
             <h2>Como Funciona</h2>
-            <p class="subtitulo">Doar nunca foi tão simples e transparente</p>
+            <p>Doar nunca foi tão simples e transparente</p>
 
-            <div class="passos">
-                <div class="passo">
-                    <div class="passo-icon">
-                        <img src="/assets/icons8-comestível-48.png" alt="Ícone ONS" width="50" height="50">
-                    </div>
+            <div class="container-passos">
+                <div class="card-passo">
+                    
+                        <i class="fa-solid fa-seedling"></i>
+                    
                     <h3>ONGs Cadastram suas Necessidades</h3>
                     <p>Organizações,especificando quantidades e detalhes.
                     </p>
                 </div>
 
-                <div class="passo">
+                <div class="card-passo">
                     <div class="passo-icon">
-                        <img src="/assets/icons8-confiança-50.png" alt="Ícone Doadores" width="50" height="50">
+                        
+                        <i class="fa-solid fa-hand-holding-heart"></i>
                     </div>
                     <h3>Doadores Escolhem Como Ajudar</h3>
                     <p>Navegue pelo catálogo de ONGs, filtre por região e selecione os itens que deseja
                         patrocinar.</p>
                 </div>
 
-                <div class="passo">
+                <div class="card-passo">
                     <div class="passo-icon">
-                        <img src="/assets/icons8-ciclo-40.png" alt="Ícone Plataforma" width="50" height="50">
+                        <i class="fa-solid fa-arrows-rotate"></i>
                     </div>
                     <h3>A Plataforma Cuida de Tudo</h3>
                     <p>Seu dinheiro vira historia que fica na plataforma, onde a ONG escolhe fornecedores com preços
@@ -247,39 +138,41 @@
     <!--SECTION COMO FUNCIONA-->
 
     <!--SECTION INFO-->
-    <section class="area-impacto">
-        <div class="conteudo-impacto">
-            <div class="convite-engajamento">
+    <section class="section-About">
+        <div class="container-About">
+            <div class="container-engajamento">
                 <h2>Junte-se à nós!</h2>
                 <p>Seja doador, ONG ou fornecedor - juntos podemos criar um impacto real. Cadastre-se agora e ajude a
                     transformar vidas com transparência e eficiência.</p>
             </div>
 
-            <div class="contato-ajuda">
-                <h3>Entre em Contato</h3>
-                <p>Precisa de ajuda ou ficou com alguma dúvida? Envie sua mensagem</p>
-
+            <div class="container-contato">
+                
                 <form class="formulario-contato">
-                    <div class="grupo-formulario">
-                        <label for="name">Nome</label>
-                        <input type="text" id="name" placeholder="Seu nome completo">
-                        <input type="email" placeholder="Email">
-                    </div>
+                    <h2>Entre em Contato</h2>
+                    <p>Precisa de ajuda ou ficou com alguma dúvida? Envie sua mensagem</p>
+                    
+                        <label for="inpNome">Nome</label>
+                        <input type="text" id="inpNome" placeholder="Seu nome completo">
 
-                    <div class="grupo-formulario">
+                        <label for="inpEmail">Email</label>
+                        <input type="email" id="inpEmail" placeholder="Email">
+                    
+
+                    
                         <label for="subject">Assunto</label>
                         <select id="subject">
-                            <option></option>
+                            <option selected>Selecione um Assunto</option>
                             <option>Reclamar do site estiver uma merda</option>
                             <option>Reclamar do antissemitismo</option>
                             <option>Dinheiro mal gasto</option>
                         </select>
-                    </div>
+                    
 
-                    <div class="grupo-formulario">
+                    
                         <label for="message">Mensagem</label>
                         <textarea id="message" placeholder="Sua mensagem"></textarea>
-                    </div>
+                    
 
                     <button type="submit">Enviar</button>
                 </form>
@@ -327,6 +220,6 @@
 
 
     <script src="../script/modal.js"></script>
-
+    <script src="https://kit.fontawesome.com/30f143b5e5.js" crossorigin="anonymous"></script>
 </body>
 </html>

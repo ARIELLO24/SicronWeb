@@ -1,67 +1,66 @@
-.Site-header {
-    text-align: center;
-    width: 100%;
-    position: static;
+.public-Header {
+    MAX-width: 100%;
+    
+    position: sticky;
     top: 0;
-    background: rgba(255, 255, 255, 1);
-    z-index: 1000;
-}
-
-.dark-mode .Site-header {
-    background-color: #000000;
-    color: rgba(255, 255, 255, 1);
-}
-
-.Header-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
+    
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
+
+    padding: 10px 30px;
+
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(245, 245, 245);
+    
+    z-index: 3000;
 }
+
+
 
 .Logo {
     display: flex;
     align-items: center;
     gap: 15px;
-}
-
-.Logo img {
-    height: 100%;
-    max-height: 45px;
-    width: auto;
     transition: transform 0.3s ease;
 }
 
-.Logo img:hover {
-    transform: translateY(-2px);
+.Logo:hover {
+    transform: translateX(2px);
 }
 
-.Nome-site {
+.Logo img {
+    width: auto;
+    max-height: 45px;
+    height: 100%;
+}
+
+.Logo span {
     font-size: 40px;
     font-weight: bold;
 }
 
+
+
+
+
+
 .Main-nav {
     display: flex;
-    gap: 2rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    align-items: center;
+    gap: 25px;
 }
 
 
-.Nav-link {
+.Main-nav a {
     text-decoration: none;
     font-size: 1.05rem;
-    transition: all var(--transition-speed) ease;
     position: relative;
     color: #2c2c2c;
+    transition: 0.3s ease;
 }
 
-.Nav-link:hover {
-    color: #01fd09;
-    transform: translateY(-2px);
+.Main-nav a:hover {
+    text-decoration: underline;
+    transform: translateY(-3px);
 }

@@ -3,200 +3,67 @@
     box-sizing: content-box;
     margin: 0;
     padding: 0;
-}
-
-/* HEADER*/
-body.dark-mode,
-.dark-mode .Secao-doadores {
-    background-color: #000000;
-    color: white;
-}
-
-:root {
-    --preto-absoluto: #000000;
-    --preto-roxado: #1A001A;
-    --roxo-profundo: #330033;
-    --roxo-medio: #660066;
-    --roxo-vivo: #990099;
-}
-
-.dark-mode .Conteudo-principal {
-    background: linear-gradient(to bottom,
-            var(--preto-absoluto) 0%,
-            var(--preto-roxado) 25%,
-            var(--roxo-profundo) 50%,
-            var(--roxo-medio) 75%,
-            var(--roxo-vivo) 100%);
-    color: black;
+    scroll-behavior: smooth;    
 }
 
 
 
-.doacao-btn {
-    background-color: #0bd615;
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.doacao-btn:hover {
-    background-color: #017207;
-}
-
-.modo-escuro-btn {
-    background-color: #333;
-    color: #fff;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.modo-escuro-btn:hover {
-    background-color: #555;
-}
-
-#darkModeToggle {
-    border-radius: 30px;
-}
-
-/* HEADER*/
 
 
 
-/* MAIN doações */
-.Conteudo-principal {
-    background-color: rgba(69, 196, 130, 1);
-    overflow: hidden;
-
-}
-
-.Titulo {
-    color: rgba(255, 255, 255, 1);
-    text-align: center;
-    font-size: 25px;
-    padding: 35px;
-}
 
 
-.dark-mode .Titulo {
-    color: white;
-}
-
-.dark-mode .Titulo-Sobre {
-    color: white;
-}
-
-.Search-filter {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 20px;
-    background:rgb(255, 255, 255);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.Search-filter input {
-    flex-basis: 100%; /* linha inteira */
-    padding: 12px 10px;
-    border: 2px solid #e9ecef;
-    border-radius: 8px;
-    font-size: 1rem;
-    background: white;
-}
-
-
-
-.cards-container2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin: 40px auto;
-}
-
-
-.ONGs {
-    display: flex;
-    justify-content: center;
-    margin: 40px auto;
-}
-
-.btn-visualizar {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-weight: bold;
-    font-style: italic;
-}
-
-.btn-visualizar:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s ease;
-}
-
-.btn-visualizar:not(:hover) {
-    transform: scale(1);
-    transition: transform 0.5s ease;
-}
-
-/*MAIN doações*/
 
 /*SECTION Como funciona*/
-.como-funciona {
-    background-color: white;
-    padding: 4rem 0;
+.section-HowWork {
+    padding: 4rem;
+    
+
     text-align: center;
+
+    background-color: white;
 }
 
-.como-funciona .container {
-    max-width: max-content;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+
 
 .como-funciona h2 {
     font-size: 2.5rem;
+    color: #2c3e50;
+
     margin-bottom: 1rem;
-    color: #2c3e50;
 }
 
-.como-funciona .subtitulo {
+.como-funciona p {
+    color: #2c3e50;
     font-size: 1.2rem;
-    color: #2c3e50;
-    margin-bottom: 3rem;
     font-weight: bold;
+
 }
 
-.passos {
+.container-passos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 2rem;
+
+    margin-top: 5rem;
 }
 
-.passo {
+.card-passo {
     flex: 1;
     min-width: 300px;
-    padding: 2rem;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.passo-icon {
-    margin-bottom: 1.5rem;
+.card-passo i {
+    font-size: 50px;
+
+    margin-bottom: 2rem;
 }
 
-.passo-icon img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-}
 
 .passo h3 {
     color: black;
@@ -213,15 +80,20 @@ body.dark-mode,
 
 /*SECTION Como funciona*/
 
+
+
+
+
+
 /*SECTION INFO*/
-.area-impacto {
+.section-About {
     background-color: rgba(255, 255, 255, 1);
     color: black;
     padding: 3rem 0;
     font-family: Arial, sans-serif;
 }
 
-.conteudo-impacto {
+.container-About {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -230,63 +102,62 @@ body.dark-mode,
     padding: 0 20px;
 }
 
-.convite-engajamento {
+.container-engajamento {
     flex: 1;
     min-width: 300px;
 }
 
-.convite-engajamento h2 {
+.container-engajamento h2 {
     font-size: 50px;
     margin-bottom: 1rem;
     color: #017207;
 }
 
-.convite-engajamento p {
+.container-engajamento p {
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
 
-.contato-ajuda {
+.container-contato {
     flex: 1;
     min-width: 300px;
 }
 
-.contato-ajuda h3 {
-    font-size: 30px;
+.container-contato h2 {
+    font-size: 50px;
     margin-bottom: 1rem;
-    color: rgba(43, 43, 43, 0.7)ck;
+    color: rgba(43, 43, 43);
 }
 
-.contato-ajuda p {
+.container-contato p {
     font-weight: 300;
 }
 
 .formulario-contato {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
 }
 
-.grupo-formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
 
-.grupo-formulario label {
+
+.formulario-contato label {
     font-weight: bold;
 }
 
-.grupo-formulario input,
-.grupo-formulario select,
-.grupo-formulario textarea {
+.formulario-contato input,
+.formulario-contato select,
+.formulario-contato textarea {
     padding: 0.8rem;
-    border-radius: 4px;
+    margin-bottom: 1rem;
+    
     background-color: white;
     color: black;
+    
+    border: 1px solid black;
+    border-radius: 4px;
 }
 
-.grupo-formulario textarea {
+.formulario-contato textarea {
     min-height: 100px;
     resize: vertical;
 }
