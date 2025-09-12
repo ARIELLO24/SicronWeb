@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../style/perfil.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="IconeSite" href="../assets/Logo.svg">
-    <link rel="stylesheet" href="../style/modalP.css">
-    <link rel="stylesheet" href="../style/components/Site-header.css">
+    
+    <link rel="stylesheet" href="../styles/main.css">
 </head>
 
 <!-- Modal Editar Perfil -->
@@ -82,22 +77,25 @@
 
 <body>
 
-    <header class="Site-header">
-        <div class="Header-container">
-            <div class="Logo">
-                <a href="#">
-                    <img src="../assets/Logo.svg" alt="IconeONG" width="400" height="400">
-                </a>
-                <span class="Nome-site">Sicron</span>
-            </div>
-            <nav class="Main-nav" aria-label="Main navigation">
-                <a href="index.html" class="Nav-link">Inicio</a>
-                <a href="#Conteudo-principal" class="Nav-link">ONGs</a>
-                <a href="../view/Sobre.html" class="Nav-link">Sobre nós</a>
-                <a href="#" class="Nav-link">⚙️</a>
-                <a href="../desenvolvimento/cadastro.html" class="Nav-link">👤</a>
-            </nav>
+    <!--HEADER-->
+    <header class="public-Header">
+        <div class="Logo">
+            <a href="#">
+                <img src="../assets/Logo.svg" alt="IconeONG" width="400" height="400">
+            </a>
+            <span>Sicron</span>
         </div>
+        <nav class="Main-nav" aria-label="Main navigation">
+            <a href="Index.html">Inicio</a>
+
+            <a href="">ONGs</a>
+
+            <a href="Index.html#section-About">Sobre nós</a>
+            
+            <a href="../view/Cadastro.html" >
+                <i class="fa-regular fa-user"></i>
+            </a>
+        </nav>
     </header>
 
     <main>
@@ -143,5 +141,6 @@
     </main>
 
     <script src="/script/modalP.js"></script>
+    <script src="https://kit.fontawesome.com/30f143b5e5.js" crossorigin="anonymous"></script>
 </body>
 </html>

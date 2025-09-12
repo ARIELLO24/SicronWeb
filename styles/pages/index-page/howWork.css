@@ -1,0 +1,65 @@
+/*SECTION Como funciona*/
+#section-HowWork {
+    padding: 4rem;
+    
+
+    text-align: center;
+
+    background-color: white;
+}
+
+
+
+.como-funciona h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+
+    margin-bottom: 1rem;
+}
+
+.como-funciona p {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+.container-passos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    margin-top: 5rem;
+}
+
+.card-passo {
+    flex: 1;
+    min-width: 300px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-passo i {
+    font-size: 50px;
+
+    margin-bottom: 2rem;
+}
+
+
+.passo h3 {
+    color: black;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.passo p {
+    color: rgba(43, 43, 43, 0.7);
+    line-height: 1.6;
+    text-align: center;
+}
+
+/*SECTION Como funciona*/

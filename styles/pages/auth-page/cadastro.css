@@ -1,70 +1,76 @@
-body {
-    background: #f3f6fa;
-    font-family: "Inter", sans-serif;
-    margin: 0;
-    background: #f3f6fa;
-    font-family: "Segoe UI", Arial, sans-serif;
-}
 
-/* main centraliza só o form */
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 80px);
-    /* altura da tela menos o header */
-    padding: 20px;
-}
 
 .form-container {
-    background: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     width: 350px;
+    
+    padding: 30px;
+    margin: 3rem auto 5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
+    border-radius: 10px;
+    
+}
+
+.container-logo {
     text-align: center;
 }
 
-.logo img {
+.container-logo img {
     width: 50px;
 }
 
-.logo h2 {
+.container-logo h2 {
     color: #2bb673;
+
     margin: 5px 0 20px;
 }
 
 h1 {
     font-size: 24px;
     color: #333;
+
     margin-bottom: 5px;
 }
 
 p {
     color: #666;
     font-size: 14px;
+
     margin-bottom: 20px;
 }
 
 .input-group {
-    position: relative;
     margin-bottom: 15px;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #ccc;
 }
 
 .input-group input {
-    width: 80%;
-    padding: 12px 40px 12px;
+    flex: 1;
+    
+    padding: 10px;
+    
+    font-size: 14px;
+    
     border: none;
     outline: none;
-    font-size: 14px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.input-group .icon {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: 18px;
+.input-group i {
     color: #666;
+
+    margin-right: 10px;
 }
 
 .checkbox {
@@ -81,33 +87,50 @@ p {
     margin-top: 3px;
 }
 
-.btn {
+.form-container button[type='submit'] {
     width: 100%;
+    
     padding: 12px;
+    margin-top: 10px;
+    
     background: #2bb673;
     color: white;
+    font-size: 16px;
+    
     border: none;
     border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
+
 }
 
-.btn:hover {
+.form-container button[type='submit']:hover {
     background: #239d61;
+    cursor: pointer;
 }
+
+
 
 .login-link {
-    margin-top: 15px;
-}
+    width: 100%;
 
-.login-link a {
-    text-decoration: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+
+    display: inline-block;
+
+    background-color: #fff;
+
     color: #333;
     font-size: 14px;
     font-weight: bold;
+
+    text-align: center;
+    text-decoration: none;
+    
     border: 1px solid #ddd;
-    padding: 8px 12px;
     border-radius: 6px;
-    display: inline-block;
+}
+
+.login-link:hover {
+    background: #eee;
+    cursor: pointer;
 }
