@@ -6,6 +6,7 @@
 
 .container-Hero {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 50px;
     padding: 0 2rem;
@@ -31,30 +32,36 @@
 }
 
 .Botao-doacaoRap {
-    display: inline-block;
     padding: 12px 30px;
-    background: linear-gradient(45deg, #FFD600, #4AC47F);
+
+    display: inline-block;
+
+    background: var(--primary-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     color: white;
-    border: 0;
-    border-radius: 5px;
+    
     font-size: 16px;
     font-weight: bold;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    
+    border: 0;
+    border-radius: 5px;
+    
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .Botao-doacaoRap:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s ease;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    background-color: var(--primary-color-hover);
 }
 
-.Botao-doacaoRap:not(:hover) {
-    transform: scale(1);
-    transition: transform 1s ease;
-}
+
 
 .Imagem-conteudo {
     flex: 1;
+    max-width: 800px;
+    max-height: 800px;
 }
 
 .Imagem-conteudo img {
