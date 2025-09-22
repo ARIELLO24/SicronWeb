@@ -104,6 +104,11 @@
     font-size: 14px;
 }
 
+#sobre {
+    resize: none;
+    
+}
+
 /* Botão */
 .btn-salvar {
     width: 100%;

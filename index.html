@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="IconeSite" href="../assets/Logo.svg">
+    
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<!--Modal de doação rapida-->
+<div id="modalDoacao" class="modal">
+    <div class="modal-conteudo">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+        <!-- Formulario de doação -->
+        <div class="Container-doar">
+            <div class="Doar-card">
+                <div class="Info">
+                    <img src="../assets/Logo.svg" alt="internet">
+                    SICRON
+                    <h1>Seus Dados</h1>
+                    <p>Para continuar com o pagamento, precisamos que você nos forneça algumas
+                        informações.</p>
+                </div>
+
+                <!-- Campo de nome-->
+                <form action="#" method="POST" class="Doar-rapido">
+                    <div class="Grupo-input">
+                        <label for="username" class="form-label">Nome completo</label>
+                        <input type="text" id="username" name="username" class="Form-input"
+                            placeholder="Entre com seu nome completo" required>
+                    </div>
+                    <!-- Campo de email-->
+                    <div class="Grupo-input">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="Form-input" placeholder="Entre com seu email"
+                            required>
+                    </div>
+                    <!-- Campo de data de nascimento -->
+                    <div class="Grupo-input">
+                        <label for="nascimento" class="form-label">Data de Nascimento</label>
+                        <input type="date" id="nascimento" name="nascimento" class="Form-input" required>
+                    </div>
+
+                    <button type="submit" class="Botao-proximo">Próximo</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Modal de doação rapida-->
+
+<body>
+    <!--HEADER-->
+    <header class="public-Header">
+        <div class="Logo">
+            <a href="#">
+                <img src="../assets/Logo.svg" alt="IconeONG" width="400" height="400">
+            </a>
+            <span>Sicron</span>
+        </div>
+        <nav class="Main-nav" aria-label="Main navigation">
+            <a href="#section-Hero">Inicio</a>
+
+            <a href="">ONGs</a>
+
+            <a href="#section-About">Sobre nós</a>
+            
+            <a href="./view/auth.html" >
+                <i class="fa-regular fa-user"></i>
+            </a>
+        </nav>
+    </header>
+    
+    <!--SECTION Doadores-->
+    <section id="section-Hero">
+        <div class="container-Hero">
+            
+                <div class="Texto-conteudo">
+                    <h1>Conectando doadores<br>a quem realmente precisa</h1>
+                    <p>Faça a diferença na vida de pessoas de<br>forma segura e transparente</p>
+                    <button class="Botao-doacaoRap" onclick="abrirModal()">Doação Rápida</button>
+                </div>
+
+                <div class="Imagem-conteudo">
+                    <img src="../assets/humildade.webp" alt="Conectando doadores">
+                </div>
+            </div>
+        
+    </section>
+    <!--SECTION Doadores-->
+
+    <!--SECTION COMO FUNCIONA-->
+    <section id="section-HowWork">
+        <div class="container-HowWork">
+            <h2>Como Funciona</h2>
+            <p>Doar nunca foi tão simples e transparente</p>
+
+            <div class="container-passos">
+                <div class="card-passo">
+                    
+                        <i class="fa-solid fa-seedling"></i>
+                    
+                    <h3>ONGs Cadastram suas Necessidades</h3>
+                    <p>Organizações,especificando quantidades e detalhes.
+                    </p>
+                </div>
+
+                <div class="card-passo">
+                    <div class="passo-icon">
+                        
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Doadores Escolhem Como Ajudar</h3>
+                    <p>Navegue pelo catálogo de ONGs, filtre por região e selecione os itens que deseja
+                        patrocinar.</p>
+                </div>
+
+                <div class="card-passo">
+                    <div class="passo-icon">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </div>
+                    <h3>A Plataforma Cuida de Tudo</h3>
+                    <p>Seu dinheiro vira historia que fica na plataforma, onde a ONG escolhe fornecedores com preços
+                        expostos, faz a compra e reúnice os itens.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECTION COMO FUNCIONA-->
+
+    <!--SECTION INFO-->
+    <section id="section-About">
+        <div class="container-About">
+            <div class="container-engajamento">
+                <h2>Junte-se à nós!</h2>
+                <p>Seja doador, ONG ou fornecedor - juntos podemos criar um impacto real. Cadastre-se agora e ajude a
+                    transformar vidas com transparência e eficiência.</p>
+            </div>
+
+            <div class="container-contato">
+                
+                <form class="formulario-contato">
+                    <h2>Entre em Contato</h2>
+                    <p>Precisa de ajuda ou ficou com alguma dúvida? Envie sua mensagem</p>
+                    
+                        <label for="inpNome">Nome</label>
+                        <input type="text" id="inpNome" placeholder="Seu nome completo">
+
+                        <label for="inpEmail">Email</label>
+                        <input type="email" id="inpEmail" placeholder="Email">
+                    
+
+                    
+                        <label for="subject">Assunto</label>
+                        <select id="subject">
+                            <option selected>Selecione um Assunto</option>
+                            <option>Reclamar do site estiver uma merda</option>
+                            <option>Reclamar do antissemitismo</option>
+                            <option>Dinheiro mal gasto</option>
+                        </select>
+                    
+
+                    
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" placeholder="Sua mensagem"></textarea>
+                    
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--SECTION INFO-->
+
+    <footer class="rodape-ongs">
+        <div class="container-rodape">
+            <div class="logo-rodape">
+                <h2>SICRON</h2>
+                <p>Transformando vidas com transparência e impacto social.</p>
+            </div>
+
+            <div class="links-rodape">
+                <h3>Links úteis</h3>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">ONGs</a></li>
+                </ul>
+            </div>
+
+            <div class="contato-rodape">
+                <h3>Fale Conosco</h3>
+                <p>Email: team@sicron.org</p>
+                <p>Telefone: (51) 99699-7859</p>
+            </div>
+
+            <div class="redes-rodape">
+                <h3>Redes Sociais</h3>
+                <div class="icones-redes">
+                    <a href="#"><img src="/assets/icons8-facebook-novo-48.png" alt="Facebook"></a>
+                    <a href="#"><img src="/assets/icons8-instagram-48.png" alt="Instagram"></a>
+                    <a href="#"><img src="/assets/icons8-x-50.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="direitos">
+            <p>&copy; 2025 SICRON. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="../script/modal.js"></script>
+    <script src="https://kit.fontawesome.com/30f143b5e5.js" crossorigin="anonymous"></script>
+</body>
+</html>
