@@ -16,3 +16,5 @@
 /* @import url(components/Card.css); --> Remover */ 
 @import url(components/modal.css);
 @import url(components/modalP.css);
+@import url(components/btn-primary.css);
+@import url(components/btn-secondary.css);

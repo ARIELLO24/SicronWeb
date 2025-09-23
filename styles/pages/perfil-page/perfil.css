@@ -41,18 +41,14 @@
     color: #333;
 }
 
-.edit-btn {
-    background: none;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-    color: #888;
-    transition: color 0.3s;
+.btn-edit-perfil {
+    padding: 8px !important;
+    
+    font-weight: normal !important;
+    font-size: 16px !important;
 }
 
-.edit-btn:hover {
-    color: #333;
-}
+
 
 /* Informações pessoais */
 .info {

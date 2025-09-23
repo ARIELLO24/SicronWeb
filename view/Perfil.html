@@ -52,11 +52,6 @@
                             value="São Leopoldo - RS" required>
                     </div>
 
-                    <!-- Doações realizadas -->
-                    <div class="grupo-input">
-                        <label for="doacoes" class="form-label">Doações Realizadas</label>
-                        <input type="number" id="doacoes" name="doacoes" class="form-input" value="4" min="0" required>
-                    </div>
 
                     <!-- Sobre mim -->
                     <div class="grupo-input">
@@ -66,7 +61,7 @@ Sou apaixonado por tecnologia e adoro ajudar pessoas. Sempre busco evoluir e apr
                         </textarea>
                     </div>
 
-                    <button type="submit" class="btn-salvar">Salvar Alterações</button>
+                    <button type="submit" class="btn-primary btn-salvar">Salvar Alterações</button>
                 </form>
             </div>
         </div>
@@ -79,20 +74,19 @@ Sou apaixonado por tecnologia e adoro ajudar pessoas. Sempre busco evoluir e apr
 
     <!--HEADER-->
     <header class="public-Header">
-        <div class="Logo">
-            <a href="#">
-                <img src="../assets/Logo.svg" alt="IconeONG" width="400" height="400">
+        
+            <a href="../index.html" class="Logo" title="Página Inicial">
+                <img src="../assets/Logo.svg" alt="IconeONG" width="400" height="400" >
+                <span>Sicron</span>
             </a>
-            <span>Sicron</span>
-        </div>
+        
         <nav class="Main-nav" aria-label="Main navigation">
-            <a href="../index.html">Inicio</a>
 
-            <a href="">ONGs</a>
+            <a href="" title="Ver ONGs Cadastradas">ONGs</a>
 
-            <a href="../index.html#section-About">Sobre nós</a>
-
-            <a href="./auth.html">
+            <a href="../index.html#section-About" title="Nossa História">Sobre nós</a>
+            
+            <a href="./auth.html" >
                 <i class="fa-regular fa-user"></i>
             </a>
         </nav>
@@ -108,7 +102,7 @@ Sou apaixonado por tecnologia e adoro ajudar pessoas. Sempre busco evoluir e apr
             <div class="card">
                 <div class="card-header">
                     <h3>Informações Pessoais</h3>
-                    <button class="edit-btn" onclick="abrirModalP()">✎ Editar</button>
+                    <button class="btn-secondary btn-edit-perfil" onclick="abrirModalP()">✎ Editar</button>
                 </div>
                 <div class="info">
                     <img src="../assets/IconGit.png" alt="Foto de Perfil" class="profile-pic">
