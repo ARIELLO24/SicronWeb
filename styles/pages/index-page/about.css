@@ -21,31 +21,17 @@
     min-width: 300px;
 }
 
-.container-engajamento h2 {
-    font-size: 50px;
-    margin-bottom: 1rem;
-    
-}
 
-.container-engajamento p {
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
+
+
 
 .container-contato {
     flex: 1;
     min-width: 300px;
 }
 
-.container-contato h2 {
-    font-size: 50px;
-    margin-bottom: 1rem;
-    color: rgba(43, 43, 43);
-}
 
-.container-contato p {
-    font-weight: 300;
-}
+
 
 .formulario-contato {
     display: flex;
